@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:wght@400;600;700&display=swap');
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px; /* Increased width */
+    height: 700px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    border-radius: 15px; /* Increased border radius for a more rounded appearance */
+    padding: 40px 80px; /* Increased padding */
+}
+
+.wrapper h1 {
+    font-size: 70px; /* Increased font size for the header */
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 420px;
+    height: 70px; /* Increased input box height */
+    margin: 30px 0; /* Increased margin between inputs */
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.458);
+    border: none;
+    outline: none;
+    border: 2px solid #ffffff91;
+    border-radius: 20px; /* Increased border radius */
+    font-size: 20px; /* Increased font size inside input */
+    color: #ffffff;
+    padding: 20px 55px 20px 20px; /* Adjusted padding for larger input text */
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 20px;
+    top: 29%;
+    font-size: 30px; /* Increased font size for icon */
+}
+
+/* From Uiverse.io by Kabak */ 
+button {
+    height: 70px; /* Increased button height */
+    margin: 0px 20%; /* Reduced margin for larger button width */
+    width: 60%; /* Increased button width */
+    background: #333;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: solid #404c5d 1px;
+    font-family: "Poppins", serif;
+    font-size: 20px; /* Increased font size for button text */
+    color: rgb(161, 161, 161);
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    border-radius: 10px; /* Increased border radius */
+    background: linear-gradient(145deg, #2e2d2d, #212121);
+    -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+      inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+    box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+      inset 5px 5px 10px #212121, inset -5px -5px 10px #212121;
+}
+
+button:hover {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+}
+
+button:active {
+  -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+  color: #d6d6d6;
+  -webkit-transition: 100ms;
+  transition: 100ms;
+}
+
+.wrapper .register-link {
+    font-size: 18px; /* Increased font size for the register link */
+    text-align: center;
+    margin: 25px 0 20px; /* Increased margins */
+}
+
+.register-link p a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
