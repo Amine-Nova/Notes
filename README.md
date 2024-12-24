@@ -8,9 +8,11 @@ The Frontend:
  npx tailwindcss init -p
  npm run dev
 ```
+cd ..
 
 The BackEnd:
 ```
+ cd backend
  source env/bin/activate
  python3 manage.py migrate
  python3 manage.py makemigrations
