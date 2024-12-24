@@ -4,6 +4,7 @@ import './login.css'
 
 const Home = () => {
     return (
+        <div className='bo'>
         <div className='wrapper'>
             <form action="/login">
                 <h1>Welcome</h1>
@@ -11,6 +12,7 @@ const Home = () => {
                 <button class='w-[300px] h-[80px] m-16 text-2xl font-semibold'>Get Started</button>
                 </div>
             </form>
+        </div>
         </div>
     )
 }
