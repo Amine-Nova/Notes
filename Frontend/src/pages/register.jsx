@@ -32,28 +32,30 @@ const Register = () => {
           }
     };
     return (
-        <div className='wrapper'>
-            <form onSubmit={handleSubmit}>
-                <h1>Sign Up</h1>
-                <div className="input-box">
-                    <input type="text" placeholder='Username' value={username} onChange={(e) => setUsername(e.target.value)} required/>
-                    <FaRegUser className='icon'/>
-                </div>
-                <div className="input-box">
-                    <input type="password" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} required/>
-                    <LuLock className='icon'/>
-                </div>
-                <div className="input-box">
-                    <input type="password" placeholder='Confirm Password' value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} required/>
-                    <LuLock className='icon'/>
-                </div>
-                {error && <p className="error">{error}</p>}
-                <button type='submit'>Sign Up</button>
-                <div className="register-link">
-                    Already have an account? <NavLink to="/login">Login</NavLink>
+        <div className='bo'>   
+            <div className='wrapper'>
+                <form onSubmit={handleSubmit}>
+                    <h1>Sign Up</h1>
+                    <div className="input-box">
+                        <input type="text" placeholder='Username' value={username} onChange={(e) => setUsername(e.target.value)} required/>
+                        <FaRegUser className='icon'/>
+                    </div>
+                    <div className="input-box">
+                        <input type="password" placeholder='Password' value={password} onChange={(e) => setPassword(e.target.value)} required/>
+                        <LuLock className='icon'/>
+                    </div>
+                    <div className="input-box">
+                        <input type="password" placeholder='Confirm Password' value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} required/>
+                        <LuLock className='icon'/>
+                    </div>
+                    {error && <p className="error">{error}</p>}
+                    <button type='submit' class="ml-20 font-semibold text-2xl">Sign Up</button>
+                    <div className="register-link">
+                        Already have an account? <NavLink to="/login">Login</NavLink>
 
-                </div>
-            </form>
+                    </div>
+                </form>
+            </div>
         </div>
     )
 

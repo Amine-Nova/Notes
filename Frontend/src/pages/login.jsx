@@ -20,30 +20,32 @@ const Login = () => {
         try {
             const response = await axios.post('http://127.0.0.1:8080/login/', userData);
             console.log('Login successfull:', response.data);
-            navigate('/');
+            navigate('/todo');
           } catch (err) {
             console.error('Error', err);
             setError('Login failed');
           }
     };
     return (
-        <div className='wrapper'>
-            <form onSubmit={handleSubmit}>
-                <h1>Login</h1>
-                <div className="input-box">
-                    <input type="text" placeholder='Username' value={username} onChange={(e) => getUsername(e.target.value)} required/>
-                    <FaRegUser className='icon'/>
-                </div>
-                <div className="input-box">
-                    <input type="password" placeholder='Password' value={password} onChange={(e) => getPassword(e.target.value)} required/>
-                    <LuLock className='icon'/>
-                </div>
-                {error && <p className="error">{error}</p>}
-                <button type='submit'>Login</button>
-                <div className="register-link">
-                    Don't have an account? <NavLink to="/register">Register</NavLink>
-                </div>
-            </form>
+        <div className='bo'>
+            <div className='wrapper'>
+                <form onSubmit={handleSubmit}>
+                    <h1>Login</h1>
+                    <div className="input-box">
+                        <input type="text" placeholder='Username' value={username} onChange={(e) => getUsername(e.target.value)} required/>
+                        <FaRegUser className='icon'/>
+                    </div>
+                    <div className="input-box">
+                        <input type="password" placeholder='Password' value={password} onChange={(e) => getPassword(e.target.value)} required/>
+                        <LuLock className='icon'/>
+                    </div>
+                    {error && <p className="error">{error}</p>}
+                    <button type='submit' class="ml-20 font-semibold text-2xl">Login</button>
+                    <div className="register-link">
+                        Don't have an account? <NavLink to="/register">Register</NavLink>
+                    </div>
+                </form>
+            </div>
         </div>
     )
 }
