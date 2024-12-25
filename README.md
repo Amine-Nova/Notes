@@ -3,6 +3,9 @@
 The Frontend:
 ```
  cd frontend
+ nvm install 18
+ nvm use 18
+ npm install structured-clone
  npm install axios react-router-dom
  npm install -D tailwindcss postcss autoprefixer
  npx tailwindcss init -p
