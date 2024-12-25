@@ -17,6 +17,9 @@ The BackEnd:
 ```
  cd backend
  source env/bin/activate
+ pip install django-rest-framework
+ pip install django
+ python -m pip install django-cors-headers
  python3 manage.py migrate
  python3 manage.py makemigrations
  python3 manage.py runserver 8080
