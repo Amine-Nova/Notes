@@ -16,6 +16,7 @@ cd ..
 The BackEnd:
 ```
  cd backend
+ python3 -m venv env
  source env/bin/activate
  pip install django-rest-framework
  pip install django
